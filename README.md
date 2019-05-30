@@ -6,6 +6,10 @@ In this project, historical data on 150,000 borrowers id analyzed. We implemente
 
 It is commonly desired for banks to accurately assess the probability of default for their customers so that they can manage their loan risk better. With a better model, they can take calculated risk in lending out to customers thus improving the certainty of their profit. They can tailor make interest rate to cover for the level of risk they are exposed from the loan.
 
-This project is a Kaggle competition issued seven years ago. We sent our predictions in late submission. Our random forest model gives the AUC score 0.86508. In this competition the first rank's score is 0.86955. 
+This project is a Kaggle competition issued seven years ago. We sent our predictions in late submission. Our random forest and gradient boosting models give the AUC scores 0.86508 and 0.86864 respectively. In this competition the first rank's score is 0.86955. 
+
+The above results are related to overall accuracy score. However, in such imbalanced datasets, in general costs of false negatives and false positives are not the same. Here to make data more balanced we appeal to over-sampling techniques. By this way, with very small loss in accuracy score, we gain much more recall scores, which compensate the first loss sufficiently in terms of cost. (recall_score=TP/(TP+FN)) 
+
+
 
 Jupyter notebook files can be read in https://nbviewer.jupyter.org if there is any need.
